@@ -53,6 +53,26 @@ h1, h3, h2{
   padding: 0px 220px;
 }
 
+.contact-title{
+  font-size: 60px;
+  font-weight: 700;
+  border-bottom: 5px solid #82FFB7;
+  margin-bottom:0;
+}
+
+.contact-mail{
+  font-size: 40px;
+  font-weight: 700;
+  padding-bottom:20px;
+  color: white;
+  margin:0;
+}
+
+.contact-description{
+  margin-bottom:0px;
+  padding: 30px 0px 0px 0px;
+}
+
 .title-quote{
   font-size: 50px;
   font-weight: 700;
@@ -64,14 +84,14 @@ h1, h3, h2{
 }
 
 #content-left{
-  width: 50%;
+  width: 30%;
   height: 460px;
   display: block;
   float: left;
 }
 
 #content-left-form{
-  width: 50%;
+  width: 60%;
   height: 160px;
   display: block;
   float: left;
@@ -87,11 +107,14 @@ h1, h3, h2{
 .message-left-form{
   font-size: 33px;
   font-weight: 700;
+  padding-top:20px;
 }
 
 .content-form{
   height: 400px;
   overflow: hidden;
+  padding-top: 100px;
+  overflow: auto;
 }
 
 input{
@@ -179,7 +202,7 @@ footer{
 .description{
   font-size: 20px;
   color: #424242;
-  padding:190px 30% 0px 10%;
+  padding:190px 10% 0px 10%;
   line-height: 28px;
 }
 
@@ -256,10 +279,6 @@ a:hover{
   padding: auto;
 }
 
-.grid > div:hover {
-
-}
-
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -269,6 +288,10 @@ a:hover{
   padding-top:10px;
 }
 
+.grid > div {
+  padding:1em;
+  background-color: #82FFB7
+}
 
 .box1{
   grid-column: 1 / 2;
@@ -314,19 +337,18 @@ a:hover{
   grid-row: 4 / 6 ;
 }
 
-
 .grid > div {
   padding:1em;
 }
+
 }
 
 /* MAX WIDTH 320 PX  - START */
-
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-width : 120px) and (max-width : 480px) {
   
   header{
-    width: 80%;
+    width: 95%;
     padding: 10px 10px;
     display:inline-block;
     position:fixed;
@@ -358,8 +380,20 @@ a:hover{
     grid-auto-rows: minmax(150px, auto);
     grid-column-gap:10px;
     max-width: 100%;
-    padding: 0px 10px 0px 10px;
+    padding: 10px 10px 0px 10px;
     background-color: #424242;
+  }
+
+  .grid > div {
+    padding:0.5em;
+    background-color: #82FFB7
+  }
+  .contact-mail{
+    font-size: 30px;
+    font-weight: 700;
+    padding-bottom:20px;
+    color: white;
+    margin:0;
   }
 
   .description{
@@ -399,6 +433,41 @@ a:hover{
     float: left;
   }
 
+  .footer-left-box{
+    width: 30%;
+    float: left;
+  }
+  
+  .footer-right-box{
+    width: 26%;
+    float: right;
+    padding: 52px 0px 0px 0px; 
+  }
+  
+  img footer{
+    max-width: 20px;
+  }
+   .contact-title{
+     padding-top:40px;
+   }
+
+   .contact-mail{
+    font-size:22px;
+  }
+  .logo-footer{
+    font-size: 20px;
+    padding-left: 10px;
+    line-height:130px;
+    font-weight: 700;
+  }
+  .footer-icon{
+    width: 100%;
+  }
+
+  .content-form{
+    height: auto;
+    padding-bottom:40px;
+  }
 }
 
 /* MAX WIDTH 320 PX  - END */
@@ -409,7 +478,7 @@ a:hover{
 @media only screen and (min-width : 480px) and (max-width : 700px) {
   
   header{
-    width: 80%;
+    width: 98%;
     padding: 10px 10px;
     display:inline-block;
     position:fixed;
@@ -442,8 +511,13 @@ a:hover{
     grid-auto-rows: minmax(150px, auto);
     grid-column-gap:10px;
     max-width: 100%;
-    padding: 0px 10px 0px 10px;
+    padding: 10px 10px 0px 10px;
     background-color: #424242;
+  }
+
+  .grid > div {
+    padding:1em;
+    background-color: #82FFB7
   }
 
   .description{
@@ -452,7 +526,6 @@ a:hover{
     padding: 155px 20px 0px 10px;
     line-height: 23px;
   }
-
 
   .content-form {
     height: 600px;
@@ -483,3 +556,48 @@ a:hover{
 }
 
 /* MAX WIDTH 320 PX  - END */
+
+/* padding-bottom and top for image */
+.mfp-no-margins img.mfp-img {
+	padding: 0;
+}
+/* position of shadow behind the image */
+.mfp-no-margins .mfp-figure:after {
+	top: 0;
+	bottom: 0;
+}
+/* padding for main container */
+.mfp-no-margins .mfp-container {
+	padding: 0;
+}
+
+
+/* 
+
+for zoom animation 
+uncomment this part if you haven't added this code anywhere else
+
+*/
+
+
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+	opacity: 0;
+	-webkit-backface-visibility: hidden;
+	-webkit-transition: all 0.3s ease-out; 
+	-moz-transition: all 0.3s ease-out; 
+	-o-transition: all 0.3s ease-out; 
+	transition: all 0.3s ease-out;
+}
+
+.mfp-with-zoom.mfp-ready .mfp-container {
+		opacity: 1;
+}
+.mfp-with-zoom.mfp-ready.mfp-bg {
+		opacity: 0.8;
+}
+
+.mfp-with-zoom.mfp-removing .mfp-container, 
+.mfp-with-zoom.mfp-removing.mfp-bg {
+	opacity: 0;
+}
