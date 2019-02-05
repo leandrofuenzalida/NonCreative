@@ -85,7 +85,6 @@ h1, h3, h2{
 
 #content-left{
   width: 30%;
-  height: 460px;
   display: block;
   float: left;
 }
@@ -151,7 +150,6 @@ input[placeholder] {
 
 #content-right{
   width: 50%;
-  height: 460px;
   display: block;
   float: right;
 }
@@ -368,8 +366,8 @@ a:hover{
     font-size:55px;
     text-decoration: underline;
     font-weight: 600 !important;
-    padding-left:40px;
-    padding-top:115px;
+    padding-left:20px;
+    padding-top:85px;
     color: #424242;
   }
 
@@ -399,9 +397,21 @@ a:hover{
   .description{
     font-size: 17px;
     color: #424242;
-    padding: 150px 0% 0px 10%;
+    padding: 15px 10px 0px 60px;
     line-height: 23px;
   }
+
+  #content-left{
+    width: 100%;
+    display: block;
+    float: left;
+  }
+  #content-right{
+    width: 100%;
+    display: block;
+    float: right;
+  }
+
 
   header ul{
     display: none
@@ -414,7 +424,7 @@ a:hover{
     padding: 0px 10px;
   }
   .message-left-form{
-    font-size: 0px;
+    font-size: 25px;
   }
   input{
     display: block;
@@ -526,7 +536,7 @@ a:hover{
     padding: 155px 20px 0px 10px;
     line-height: 23px;
   }
-
+  
   .content-form {
     height: 600px;
     background-color: #424242;
@@ -534,7 +544,7 @@ a:hover{
     padding: 0px 10px;
   }
   .message-left-form{
-    font-size: 0px;
+    font-size: 30px;
   }
   input{
     display: block;
@@ -544,6 +554,10 @@ a:hover{
     float: right;
     border-radius: 5px;
     border: none;
+  }
+
+  .contact-mail{
+    font-size: 30px;
   }
 
   #content-left-form{
